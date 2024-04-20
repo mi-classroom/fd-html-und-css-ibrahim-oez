@@ -1,0 +1,21 @@
+:root{/*Root alles* */
+    /*---------------Farben---------------*/
+    --color-black:#000000;
+    --color-white:#ffffff;
+    --color-grey: #e8e8e8;
+    --color-pink:#b62584;
+    --color-orange:#ea5b0c;
+
+    
+
+    /*------------Größen-----------------*/
+    --xs:10px;
+    --s:12px;
+    --m:16px;
+    --l:20px;
+    --xl:25px;
+    --xxl:31.5px;
+    --xxxl:40px;
+}
+
+

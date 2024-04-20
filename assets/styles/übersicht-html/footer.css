@@ -1,0 +1,9 @@
+.footer-list{
+    background-color: var(--color-grey);
+    padding: var(--m);
+    list-style-type:none;
+}
+.footer-list-item{
+    padding: var(--s);
+    text-align: center;
+}

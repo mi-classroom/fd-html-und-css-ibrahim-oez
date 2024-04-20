@@ -1,0 +1,33 @@
+.favoriten-list {
+    background-color: var(--color-grey);
+    padding: var(--m); 
+    list-style-type: none; 
+    margin: var(--m);
+    
+}
+
+.favoriten-list-item {
+    background-color: var(--color-white);
+    margin: 5px 0; 
+    padding: 10px; 
+    position: relative;     
+}
+
+.favoriten-list-item > .material-symbols-outlined {
+    font-size: 32px;
+    color: var(--color-black);
+    margin-right: var(--m);    
+}
+
+.favoriten-list-item > a {
+    position: absolute; 
+    top: 15px; 
+    left: 50px; 
+}
+
+.favoriten-list-item > p {
+    padding-left: 42px;
+    top: 70px;
+    left: 50px; 
+    font-size: var(--s);
+}
