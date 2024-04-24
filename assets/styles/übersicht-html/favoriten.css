@@ -15,12 +15,18 @@
 
 .favoriten-list-item > .material-symbols-outlined {
     font-size: 32px;
+    max-width: fit-content;
+    max-height: fit-content;
     color: var(--color-black);
-    margin-right: var(--m);    
+    position: relative;
+    
 }
 
 .favoriten-list-item > a {
-    position: absolute; 
+    display: flex;
+    max-width: fit-content;
+    max-height: fit-content;
+    position:absolute; 
     top: 15px; 
     left: 50px; 
 }

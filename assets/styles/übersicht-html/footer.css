@@ -1,5 +1,8 @@
-.footer-list{
+footer{
     background-color: var(--color-grey);
+}
+
+.footer-list{
     padding: var(--m);
     list-style-type:none;
 }

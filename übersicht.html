@@ -5,41 +5,44 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-----------------------------STYLESHEETS------------------------------------------------------------>
-  <link rel="stylesheet" href="/assets/styles/übersicht-html/reset.css"> 
-  <link rel="stylesheet" href="/assets/styles/übersicht-html/component.css">
-  <link rel="stylesheet" href="/assets/styles/übersicht-html/fonts.css">
-  <link rel="stylesheet" href="/assets/styles/übersicht-html/icon.css">
-  <link rel="stylesheet" href="/assets/styles/übersicht-html/variable.css">
-  <link rel="stylesheet" href="/assets/styles/übersicht-html/html.css">
+  <link rel="stylesheet" href="/assets/styles/reset.css">
+  <link rel="stylesheet" href="/assets/styles/component.css">
+  <link rel="stylesheet" href="/assets/styles/fonts.css">
+  <link rel="stylesheet" href="/assets/styles/icon.css">
+  <link rel="stylesheet" href="/assets/styles/variable.css">
+  <link rel="stylesheet" href="/assets/styles/html.css">
   <link rel="stylesheet" href="/assets/styles/übersicht-html/welcome.css">
   <link rel="stylesheet" href="/assets/styles/übersicht-html/favoriten.css">
   <link rel="stylesheet" href="/assets/styles/übersicht-html/ilu-schreibtisch.css">
   <link rel="stylesheet" href="/assets/styles/übersicht-html/verlauf.css">
   <link rel="stylesheet" href="/assets/styles/übersicht-html/footer.css">
   <!-----------------------------Externe-Stylesheets---------------------------------------------------->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <!---------------------------------------------------------------------------------------------------->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!-----------------------------Icon------------------------------------------------------------------->
   <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+  <!---------------------------------------------------------------------------------------------------->
   <a href="http://www.staggeringbeauty.com/">
     <img src="/assets/images/p4all.png" alt="Th Köln" />
   </a>
- 
 
-  <ul class="obere-leiste">
-    <li>
-      <a href="/images">Bilder</a>
-    </li>
-    <li>
-      <a href="/pages/about/about_the_project.html">Über das Projekt</a>
-    </li>
-  </ul>
+  <nav class="leiste">
+    <ul>
+      <li>
+        <a href="/images">Bilder</a>
+      </li>
+      <li>
+        <a href="/pages/about/about_the_project.html">Über das Projekt</a>
+      </li>
+    </ul>
+  </nav>
 
   <title>Übersicht</title>
 
 </head>
 
 <body>
- 
+
 
   <main>
     <div class="welcome">
@@ -58,13 +61,13 @@
         interessante und effiziente Weise vermitteln.
       </p>
       <p>Schau einfach mal
-      vorbei und entdecke, wie ProjectSurvival4All deine Projekterfahrung auf
-      das nächste Level heben kann.
+        vorbei und entdecke, wie ProjectSurvival4All deine Projekterfahrung auf
+        das nächste Level heben kann.
       </p>
     </div>
 
     <hr>
-<!-------------------------------------------Favoriten-------------------------------------------------->
+    <!-------------------------------------------Favoriten-------------------------------------------------->
     <div class="favoriten">
       <h2>Favoriten</h2>
       <ul class="favoriten-list">
@@ -88,7 +91,7 @@
           <a href="#">Wie priorisiere ich (ein Backlog)?</a>
           <p>Raphaela Groten</p>
         </li>
-        <li class="favoriten-list-item"> 
+        <li class="favoriten-list-item">
           <span class="material-symbols-outlined">movie</span>
           <a href="#">Wie Strukturiere ich einen Pitch?</a>
           <p>Monika Engelen</p>
@@ -97,88 +100,82 @@
     </div>
 
     <hr>
-<!-------------------------------------------Schreibtisch----------------------------------------------->
+    <!-------------------------------------------Schreibtisch----------------------------------------------->
     <div class="schreibtisch">
       <h2>Von deinem ILU Schreibtisch</h2>
       <ul class="schreibtisch-list">
         <li class="schreibtisch-list-item">
-          <span class="material-symbols-outlined">
-            folder
-            </span>
+          <span class="material-symbols-outlined">folder</span>
           <a href="#">DBS1</a>
         </li>
         <li class="schreibtisch-list-item">
-           <span class="material-symbols-outlined">
-              folder
-            </span>
+          <span class="material-symbols-outlined"> folder</span>
           <a href="#">KTN</a>
         </li>
         <li class="schreibtisch-list-item">
-           <span class="material-symbols-outlined">
-              folder
-            </span>
+          <span class="material-symbols-outlined"> folder</span>
           <a href="#">PP</a>
         </li>
         <li class="schreibtisch-list-item">
-           <span class="material-symbols-outlined">
-              folder
-            </span>
+          <span class="material-symbols-outlined">folder</span>
           <a href="#">GDW</a>
         </li>
         <li class="schreibtisch-list-item">
-           <span class="material-symbols-outlined">
-              folder
-            </span>
+          <span class="material-symbols-outlined">folder</span>
           <a href="#">SD</a>
         </li>
         <li class="schreibtisch-list-item">
-           <span class="material-symbols-outlined">
-              folder
-            </span>
+          <span class="material-symbols-outlined">folder</span>
           <a href="#">DBS2</a>
         </li>
       </ul>
     </div>
 
     <hr>
-<!---------------------------------------------Verlauf-------------------------------------------------->
+    <!---------------------------------------------Verlauf-------------------------------------------------->
     <div class="verlauf">
       <h2>Verlauf</h2>
       <div class="cards">
 
         <div class="card">
           <img src="assets/images/agenda.jpg" alt="card" width="350px" />
-          <p>Eine Übersicht über verschiedene Finanzierungsquellen für Startups, einschließlich Eigenkapital, Fremdkapital, Crowdfunding, Venture Capital und staatliche Förderprogramme.</p>
+          <p>Eine Übersicht über verschiedene Finanzierungsquellen für Startups, einschließlich Eigenkapital,
+            Fremdkapital, Crowdfunding, Venture Capital und staatliche Förderprogramme.</p>
           <a href="#">Mehr erfahren</a>
         </div>
 
         <div class="card">
           <img src="assets/images/business-idea.jpg" alt="card" width="350px" />
-          <p>Tipps und Best Practices zur Vorbereitung und Durchführung eines überzeugenden Pitches, einschließlich der Strukturierung des Inhalts, Präsentationstechniken und der Beantwortung von Fragen.</p>
+          <p>Tipps und Best Practices zur Vorbereitung und Durchführung eines überzeugenden Pitches, einschließlich der
+            Strukturierung des Inhalts, Präsentationstechniken und der Beantwortung von Fragen.</p>
           <a href="#">Mehr erfahren</a>
         </div>
 
         <div class="card">
           <img src="assets/images/finanzen-moeglichkeiten.jpg" alt="card" width="350px" />
-          <p>Eine Anleitung zum strukturierten Aufbau einer Präsentation, einschließlich der Festlegung von Zielen, Auswahl relevanter Inhalte, Gestaltung von Visuals und Präsentationstechniken.</p>
+          <p>Eine Anleitung zum strukturierten Aufbau einer Präsentation, einschließlich der Festlegung von Zielen,
+            Auswahl relevanter Inhalte, Gestaltung von Visuals und Präsentationstechniken.</p>
           <a href="#">Mehr erfahren</a>
         </div>
 
         <div class="card">
           <img src="assets/images/team-arbeit.jpg" alt="card" width="350px" />
-          <p> Eine Untersuchung verschiedener Techniken und Ansätze, um die Zusammenarbeit und Effizienz in einem Team zu verbessern, wie z.B. agile Methoden, regelmäßige Feedback-Sitzungen und klare Kommunikationskanäle.</p>
+          <p> Eine Untersuchung verschiedener Techniken und Ansätze, um die Zusammenarbeit und Effizienz in einem Team
+            zu verbessern, wie z.B. agile Methoden, regelmäßige Feedback-Sitzungen und klare Kommunikationskanäle.</p>
           <a href="#">Mehr erfahren</a>
         </div>
 
         <div class="card">
           <img src="assets/images/praesentation-aufbau.jpg" alt="card" width="350px" />
-          <p>Strategien und Techniken zur Bewältigung von Stress, einschließlich Zeitmanagement, Entspannungsübungen, Priorisierung von Aufgaben und Kommunikationstechniken.</p>
+          <p>Strategien und Techniken zur Bewältigung von Stress, einschließlich Zeitmanagement, Entspannungsübungen,
+            Priorisierung von Aufgaben und Kommunikationstechniken.</p>
           <a href="#">Mehr erfahren</a>
         </div>
 
         <div class="card">
           <img src="assets/images/agenda.jpg" alt="card" width="350px" />
-          <p>Methoden und Ansätze zur Bewertung und Validierung einer Geschäftsidee, um deren Marktchancen, Kundenbedürfnisse und Rentabilität zu prüfen, bevor man ein Startup gründet.</p>
+          <p>Methoden und Ansätze zur Bewertung und Validierung einer Geschäftsidee, um deren Marktchancen,
+            Kundenbedürfnisse und Rentabilität zu prüfen, bevor man ein Startup gründet.</p>
           <a href="#">Mehr erfahren</a>
         </div>
 
@@ -190,11 +187,10 @@
 <footer>
   <ul class="footer-list">
     <li class="footer-list-item"><a href="/images">Bilder</a></li>
-    <li class="footer-list-item">
-      <a href="/pages/about/about_the_project.html">Über das Projekt</a>
-    </li>
+    <li class="footer-list-item"><a href="/pages/about/about_the_project.html">Über das Projekt</a> </li>
     <li class="footer-list-item"><a href="/impressum.html">Impressum</a></li>
     <li class="footer-list-item"><a href="/datenschutz.html">Datenschutz</a></li>
   </ul>
 </footer>
+
 </html>
