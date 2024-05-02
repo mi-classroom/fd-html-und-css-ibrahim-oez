@@ -1,9 +1,9 @@
+*{
+    border:solid rgb(236, 19, 19) 1.5px !important;
+}
+
 html,body{
     font-family: "source-sans-3";
-    max-width: fit-content;
-    max-height: fit-content;
-    min-width: 300px;
-    min-height: 300px;
 }
 
 h1{
@@ -12,9 +12,9 @@ h1{
 }
 
 h2{
+    padding:var(--m);
     font-size: x-large;
     font-weight: bold;
-    padding:var(--m);
 }
 
 a{
@@ -33,15 +33,47 @@ hr{
 
 .leiste{
     position: absolute;
-    right: 10px;
     top: 10px;
+    right: 10px;
     
 }
+
 .leiste li {
     display: inline-block;
     max-inline-size: 100vw;
 }
+
 .leiste a {
     padding: 5px;
 }
 
+
+
+@media screen and (max-width:750px) {
+   
+    .leiste{
+        display: none;
+        transform: translateX(1000%);
+        transition: var(--tr-slow);
+    }
+    
+    .suche{
+        display: none;
+        transform: translateX(1000%);
+        transition: var(--tr-slow);
+    }
+    
+    
+    .menu-button{
+        position: relative;
+        transform: translateX(380px);
+        transition: var(--tr-slow);
+    }
+    
+}
+
+@media  screen and (max-width:500px) {
+    body {
+        display: none !important;
+    }
+}

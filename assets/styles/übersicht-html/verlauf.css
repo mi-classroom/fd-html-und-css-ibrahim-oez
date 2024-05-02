@@ -2,33 +2,51 @@
 .verlauf {
     padding: var(--m);
     margin-top: var(--m);
+    max-width: max-content;
+    justify-content: baseline;
    
-  }
-  
   .cards {
-   display: grid;
-   gap: 2rem;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    display: grid;
+    gap: 2rem;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    height: max-content;
   }
   
   .card {
     flex: 1 1 calc(30% - var(--s)); /* Breite der Karten anpassen */
-    margin-bottom: var(--s); /* Abstand zwischen den Karten */
-    padding:5px;
+    border-radius: 10px;
+    
+    
   }
   
   .card > img {
-    width: 100%; /* Bild auf volle Breite der Karte strecken */
+    max-width: 100%; /* Bild auf volle Breite der Karte strecken */
     height: auto; /* Höhe automatisch anpassen */
     border-radius: 10px;
   }
 
   .card > p {
+    font-weight: 400;
     padding: 5px;
-
+    text-align: justify-all;
+   
   }
   
-  .card > a {
+.cards > .card-item {
+  position: absolute;
+  bottom: 0px;
+  
+}
+
+  .card-item  li{
+    display: inline-block;
+    font-weight: bold;
+    font-size: smaller;
+    margin-bottom: 2px;
     padding: 5px;
+    background-color: var(--color-grey);
   }
+  }
+  
+  
   

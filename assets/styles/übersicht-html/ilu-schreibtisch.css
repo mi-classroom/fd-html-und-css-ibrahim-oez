@@ -1,24 +1,26 @@
 
 
 .schreibtisch-list{
-    background-color: var(--color-grey);
     padding: var(--m); 
-    list-style-type: none; 
     margin: var(--m);
+    background-color: var(--color-grey); 
+    list-style-type: none;
 }
 
-.schreibtisch-list-item{
-    background-color: var(--color-white);
-    margin: 5px 0; 
-    padding: 10px; 
-    position: relative;  
+.schreibtisch-list-item{ 
+    position: relative; 
+    padding: 10px;
+    margin: 5px 0;
+    background-color: var(--color-white);  
 }
+
 .schreibtisch-list-item > a {
-      position: absolute;
-      top: 20px;
+    position: relative;
+    bottom: 12px;
 }
+
 .schreibtisch-list-item > .material-symbols-outlined{
-    font-size: 32px;
+    margin-right: var(--m);
     color: var(--color-black);
-    margin-right: var(--m); 
+    font-size: 32px; 
 }

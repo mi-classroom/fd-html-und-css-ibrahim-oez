@@ -1,14 +1,14 @@
-:root{/*Root alles* */
-    /*---------------Farben---------------*/
-    --color-black:#000000;
-    --color-white:#ffffff;
+:root{/* Root alles* */
+    /* ---------------Farben--------------- */
+    --color-black:#000;
+    --color-white:#fff;
     --color-grey: #e8e8e8;
     --color-pink:#b62584;
     --color-orange:#ea5b0c;
 
     
 
-    /*------------Größen-----------------*/
+    /* ------------Größen----------------- */
     --xs:10px;
     --s:12px;
     --m:16px;
@@ -16,6 +16,11 @@
     --xl:25px;
     --xxl:31.5px;
     --xxxl:40px;
+
+    --tr-fast:0.3s;
+    --tr-normal:0.6s;
+    --tr-slow:1s;
+
 }
 
 
