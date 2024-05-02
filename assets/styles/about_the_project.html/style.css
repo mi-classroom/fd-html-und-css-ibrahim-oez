@@ -1,0 +1,39 @@
+ h2{
+
+}
+
+body{
+    font-family: "source-sans-3";
+}
+
+.container-einleitung  > p{
+    border: black solid 3px; 
+    padding: 20px
+    ;   
+    text-align: justify;
+}
+
+.container-zielsetzung > p{ border: black solid 3px; 
+    padding: 20px
+    ;   
+    text-align: justify;
+}
+
+.container-anwendung > p{
+    border: black solid 3px; 
+    padding: 20px
+    ;   
+    text-align: justify;
+}
+
+.container-tabelle > table,td
+{
+    border: black solid 3px; 
+    padding: 10px 5px;
+    text-align: justify-all;
+}
+
+thead{
+    font-weight:bold;
+}
+
