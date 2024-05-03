@@ -6,7 +6,7 @@ let currentData = null;
 
 
 
-document.addEventListener('DOMContentLoaded',function(){
+document.addEventListener('DOMContentLoaded',() => {
     initArticleList();
 })
 
@@ -28,28 +28,34 @@ function initArticleList(){
 };
 
 function filterArticles(filterValue){
-    const filteredArticles = currentData.articles.filter((article)=>{
-        return article.tags.keywords.includes(filterValue);
+    const filteredArticles = currentData.articles.filter((article) => {
+        return article.tags.keywords.includes(filterValue)
     })
     return filteredArticles
 }
 
 
 function initFilter(){
-let filterButtons = document.querySelector('[data-js-category="keywords"] [data-js-filter]');
-filterButtons.forEach((button) => {
-    button.addEventListener('click',(event)=>{
-        const filter = event.currentTarget.getAttribute('data-js-filter');
-        const filteredArticles = filterArticles(filter)
-        renderArticle(filteredArticles)
+const filterSection = document.querySelector('[data-js-category="keywords"]');
+const keywords = currentData.articles.map(() => {
+    return article.tafs.keywords;
+});
+const uniqueKeywords = keywords.filter((item,index) => {
+    return keywords.indexOf(item) === index;
+});
+filterSection.forEach((button) => {
+    button.addEventListener('click',(event) => {
+        const filterValue = event.currentTarget.getAttribute('data-js-filter');
+        const filteredArticles = filterArticles(filterValue);
+        renderArticle(filteredArticles);
 
-    })
+    });
 });
 }
 
 function renderArticle(articles){
-    articleListElement = document.querySelector('[data-js-generate-articlelist]');
-   
+    const articleListElement = document.querySelector('[data-js-generate-articlelist]');
+  
     const cards = articles.map(function(article){
         return `
         <figure>
@@ -84,6 +90,8 @@ function renderArticle(articles){
     const author = articles.map(function(article) {
         return `<li>${article.author}</li>`;
     }).join('');
+
+
 
     
 }
